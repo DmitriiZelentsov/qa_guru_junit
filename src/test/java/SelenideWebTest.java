@@ -37,7 +37,7 @@ public class SelenideWebTest extends TestBase {
         );
     }
 
-    @MethodSource
+    @MethodSource("selenideSiteShouldDisplayCorrectButtons")
     @ParameterizedTest(name = "Для локали {0}")
     @DisplayName("Проверка блока Навигации")
     void selenideSiteShouldDisplayCorrectButtons(Language language, List<String> expectedButtons) {
